@@ -20,8 +20,12 @@ h6 {
 
 .education-entry,
 .work-entry,
-.project-entry {
+.project-entry{
   padding: 0 5%;
+}
+
+.list-entry {
+  font-size:13px;
 }
 
 h1 {
@@ -129,7 +133,7 @@ a {
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #484848;
+  background-color: rgba(165, 53, 53, 0.88); //#484848;
 }
 
 .flex-box {

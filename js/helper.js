@@ -62,6 +62,10 @@ var HTMLonlineTitle = "%data%";
 var HTMLonlineSchool = " - %data%</a>";
 var HTMLonlineDates = "<div class='date-text'>%data%</div><br>";
 
+var HTMLlistStart = "<ul>";
+var HTMLlistItem = '<li class = "list-entry">%data%</li>';
+var HTMLlistEnd = "</ul>";
+
 
 
 var internationalizeButton = '<button>Internationalize</button>';

@@ -36,7 +36,15 @@ var work = {
 		"endyears":"Current",
 		"Dates":"August 2015 - Current",
 		"location" :"Stony Brook, NY",
-		"Description":"Assistant professor in the departments of Mechanical Engineering and Neurology."
+		"Description":"Assistant professor in the departments of Mechanical Engineering and Neurology.",
+		"Responsibilites":["Developed and applied audio signal and natural language processing algorithms to quantify psychiatric effects of stroke.",
+			"Performed numerical simulations to investigate the role of non-linear dynamics in causing repetitive-use injuries.",
+			"Developed and tested nerual network based schemes for robust control of robotic manipulation.",
+			"Taught <i>Engineering Dynamics</i> (150 undegraduate students), <i> Advanced Control Systems </i> (30 graduate students).",
+			"Co-taught <i> Biomechanics and Movement I </i> (10 graduate students).",
+			"Advised senior design projects; Brain-computer interface for robot control, Automated mixologist, Knee/hip energy harvesting device.",
+			"Prepared manuscripts for journal and conference proceedings.",
+			"Developed algorithms for data analysis and collection in MATLAB, Python and Realbasic"]
 		},
 		{
 		"title":"Post-doctoral Researcher",
@@ -45,7 +53,16 @@ var work = {
 		"endyears":"August 2015",
 		"Dates":"September 2010 - August 2015",
 		"location" :"State College, PA",
-		"Description":"Post-doctoral researcher in the departments of Mechanical Engineering and Neurology."
+		"Description":"Post-doctoral researcher in the departments of Kinesiology and Neurology.",
+		"Responsibilites":["Developed the first computational model of motor lateralization in humans.",
+			"Applied particle swarm optimization to estimate parameters of a hybrid control model.",
+			"Condcted experiments in healthy humans and stroke patients to test the validitity of the computational model",
+			"Demonstrated that the dominant arm is specialized for optimal control.",
+			"Demonstrated that the non-dominant arm is specialized for impedance control.",
+			"Advised/trained graduate and undergraduate students in the lab.",
+			"Prepared manuscripts for journal and conference proceedings.",
+			"Developed algorithms for data analysis and collection in MATLAB and Realbasic"
+			]
 		},
 		{
 		"title":"Graduate Research/Teaching Assistant",
@@ -54,7 +71,11 @@ var work = {
 		"endyears":"August 2010",
 		"Dates":"August 2006 - August 2010",
 		"location" :"Columbus, OH",
-		"Description":"PhD researcher in the department of Mechanical Engineering."
+		"Description":"PhD researcher in the department of Mechanical Engineering.",
+		"Responsibilites":["aa",
+			"bb",
+			"Prepared manuscripts for journal and conference proceedings.",
+			"Developed algorithms for data analysis and collection in MATLAB and Realbasic."]
 		},
 		{
 		"title":"Graduate Research/Teaching Assistant",
@@ -63,7 +84,9 @@ var work = {
 		"endyears":"August 2006",
 		"Dates":"August 2004 - August 2006",
 		"location" :"Rolla, MO",
-		"Description":"MS student researcher in the department of Mechanical Engineering."
+		"Description":"MS student researcher in the department of Mechanical Engineering.",
+		"Responsibilites":["aa","bb",
+			"Prepared manuscripts for journal and conference proceedings."]
 		},
 		{
 		"employer":"Tata Motors",
@@ -72,6 +95,7 @@ var work = {
 		"Dates":"July 2003 - June 2004",
 		"location" :"Pune, India",
 		"Description":"Graduate Engineer.",
+		"Responsibilites":["aa","bb"],
 		"title":"Graduate Engineer."
 		}
 	]
@@ -195,31 +219,48 @@ education.displayschool = function() {
 		$(".education-entry:last").append(formattedMjr);
 		var formattedLoc = HTMLschoolLocation.replace("%data%",education.schools[school].location);
 		$(".education-entry:last").append(formattedLoc);
+		$(".education-entry:last").append('<div align="left" class = "list-entry"><b>Courses</b></div>');
+        $(".education-entry:last").append(HTMLlistStart);
+	    var school_courses = education.schools[school].Courses
+	    for (course in school_courses){
+			var formattedCourse = HTMLlistItem.replace("%data%", school_courses[course]);
+			$(".education-entry:last").append(formattedCourse);
+			}
+		$(".education-entry:last").append(HTMLlistEnd);
 		
 		
 
 	}
 }
 education.displayschool()
-
+var formattedDesc ="AAAAA"
 
 $("#education").append(HTMLonlineClasses);
 education.displayonline = function() {
 	for (Online in education.Online){
 		$("#education").append(HTMLschoolStart);
+
+
+
+
 		mooc = education.Online[Online];
 		var formattedUrl = HTMLonlineURL.replace("%data%", mooc["url"]);
         var formattedTitle = HTMLonlineTitle.replace("%data%", mooc["title"]);
         var formattedSchool = HTMLonlineSchool.replace("%data%", mooc["school"]);
         var formattedDates = HTMLonlineDates.replace("%data%", mooc["dates"]);
         $(".education-entry:last").append(formattedUrl+formattedTitle + formattedSchool + formattedDates);
-
-
+        $(".education-entry:last").append('<div align="left" class="list-entry"><b>Courses</b></div>');
+        $(".education-entry:last").append(HTMLlistStart);
+	    for (course in mooc.Courses){
+	    		console.log(education.Online.Courses)
+			var formattedCourse = HTMLlistItem.replace("%data%", mooc["Courses"][course]);
+			$(".education-entry:last").append(formattedCourse);
+			}
+		$(".education-entry:last").append(HTMLlistEnd);
+			
 		}
 }
 education.displayonline()
-
-
 
 function displaywork() {
 	for (job in work.jobs) {
@@ -237,10 +278,20 @@ function displaywork() {
 	$(".work-entry:last").append(formattedDays);
 	$(".work-entry:last").append(formattedloc);
 	$(".work-entry:last").append(formattedDesc);
+
+	Resp = work.jobs[job];
+	$(".work-entry:last").append('<div align="left"  class="list-entry"><b>Contributions</b></div>');
+    $(".work-entry:last").append(HTMLlistStart);
+	for (rr in Resp.Responsibilites){
+		console.log(education.Online.Courses)
+		var formattedCourse = HTMLlistItem.replace("%data%", Resp.Responsibilites[rr]);
+		$(".work-entry:last").append(formattedCourse);
+	}
+	$(".work-entry:last").append(HTMLlistEnd);
+			
 	
 	}
 }
-
 
 function inName(name) {
     var finalName = name;
