@@ -72,10 +72,11 @@ var work = {
 		"Dates":"August 2006 - August 2010",
 		"location" :"Columbus, OH",
 		"Description":"PhD researcher in the department of Mechanical Engineering.",
-		"Responsibilites":["aa",
-			"bb",
+		"Responsibilites":["Developed robotic device for upper-arm rehabilitation",
+			"Investigated how gravity torques are represented in the brain by conducting experiments in humans",
+			"Taught <i> statics </i> (60 students).",
 			"Prepared manuscripts for journal and conference proceedings.",
-			"Developed algorithms for data analysis and collection in MATLAB and Realbasic."]
+			"Developed algorithms for data analysis and collection in MATLAB and VB.Net."]
 		},
 		{
 		"title":"Graduate Research/Teaching Assistant",
