@@ -19,11 +19,8 @@ var bio = {
 	},
 	"welcomeMsg": "Welcome to my page",
 	"bioPic": "images/me.jpg",
-<<<<<<< HEAD
 	"skills": ["Programming","Machine learning","Python/R/MATLAB","JavaScript/d3","EDA","A/B Testing","VB.NET"]
-=======
-	"skills": ["Programming","Machine learning","Python/R/MATLAB","JavaScript/d3","EDA","A/B Testing", "MongoDB/SQL","VB.net"]
->>>>>>> master
+
 };
 
 
