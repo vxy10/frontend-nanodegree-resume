@@ -100,7 +100,7 @@ var work = {
 		"location" :"Pune, India",
 		"Description":"Graduate Engineer.",
 		"Responsibilites":["Coordinated design and development of a prototype for auto show.",
-			"Conducted market survey to identify ",
+			"Conducted market survey to identify price trends for steel and rubber.",
 			"Developed computational models to predict price of rubber as part of strategic sourcing group."],
 		"title":"Graduate Engineer."
 		}
