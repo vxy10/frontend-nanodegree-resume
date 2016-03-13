@@ -19,7 +19,7 @@ var bio = {
 	},
 	"welcomeMsg": "Welcome to my page",
 	"bioPic": "images/me.jpg",
-	"skills": ["Programming","Machine learning","Python/R","JavaScript/d3","EDA","A/B Testing"]
+	"skills": ["Programming","Machine learning","Python/R/MATLAB","JavaScript/d3","EDA","A/B Testing","VB.NET"]
 };
 
 
@@ -138,9 +138,9 @@ var education = {
 		"years": "1999-2003",
 		"location": "Chennai, India",
 		"State": "India",
-		"Courses": ["Linear control systems",
-			"Nonlinear control system",
-			"Neural network design",
+		"Courses": ["Linear Algebra",
+			"Calculus I/II",
+			"Dynamics",
 			"Optimal control and estimation"
 		],
 		"Majors": "Mechanical Engineering",
@@ -225,7 +225,7 @@ education.displayschool = function() {
 		$(".education-entry:last").append(formattedMjr);
 		var formattedLoc = HTMLschoolLocation.replace("%data%",education.schools[school].location);
 		$(".education-entry:last").append(formattedLoc);
-		$(".education-entry:last").append('<div align="left" class = "list-entry"><b>Courses</b></div>');
+		$(".education-entry:last").append('<div align="left" class = "list-entry"><b>Relevant Courses</b></div>');
         $(".education-entry:last").append(HTMLlistStart);
 	    var school_courses = education.schools[school].Courses
 	    for (course in school_courses){
