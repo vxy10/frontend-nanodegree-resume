@@ -19,7 +19,11 @@ var bio = {
 	},
 	"welcomeMsg": "Welcome to my page",
 	"bioPic": "images/me.jpg",
+<<<<<<< HEAD
 	"skills": ["Programming","Machine learning","Python/R/MATLAB","JavaScript/d3","EDA","A/B Testing","VB.NET"]
+=======
+	"skills": ["Programming","Machine learning","Python/R/MATLAB","JavaScript/d3","EDA","A/B Testing", "MongoDB/SQL","VB.net"]
+>>>>>>> master
 };
 
 
@@ -174,13 +178,26 @@ var education = {
 var projects = {
 	"projects":[
 	{
-		"title":"22",
+		"title":"San-Francisco Crime Analysis- Exploratory Analysis and Classification",
+		"dates": "2016",
+		"description":"Here I analyzed the crime incidents in the city of San Francisco, and built a linear classifier to predict the probability of a crime belonging to certain category. I downloaded the data set from Kaggle''s San Francisco crime classification competition (https://www.kaggle.com/c/sf-crime). I first loaded the data into R. The data set has information on the location of the crime and the time at which the crime occured starting from 2003. The data set had more than 800,000 rows and 9 columns. I did exploratory analysis and made several variables to quantify various aspects of the crime incident. For example, from time information, I got information about data, hour of the day, month, year, etc. After exploratory analysis, I identified that the day of week, hour of the day, month, year and location were the main factors that affected crime rates. I therefore used these to predict the probability of a crime belonging to given category. I used R''s Liblinear package to implement a L2-regularized logistic regression model to predict probability of each crime. To validate my model, I split into a 50% training set and 50% validation set. I then fitted the model on training data and improved based on its performance on the validation set. My final model had day of week, hour of the day, month, year, location and interaction between location and year. I then trained this model on full data. I then uploaded this on Kaggle and my best submission got a score of 401/1173. ",
+		"images":["images/SFO1.png",
+		"images/SFO2.png"],
+		"url": "https://github.com/vxy10/Udacity_projects/blob/master/P4_SFO_CrimeAnalysis/main_p4_at_v2_submission.pdf"
+	},{
+		"title":"Machine learning for fraud detection in Enron’s financial and email data",
+		"dates": "2016",
+		"description":"In this project I investigated the Enron email data. Enron email data set is a large database of about 0.5 Mn emails from about 150 employees at Enron. The Federal Energy Regulatory Commission (FERC) for investigation acquired the data after the company filed for bankruptcy in 2001. Several board members and management employees were involved in illegal business practices, and were eventually charged. Some of these people were found guilty of fraudulent practices, and others settled out of court. These people are tagged as Persons of Interest (POI) in the data set. Here I developed a formal scheme to identify POIs. The goal of this project is to develop an algorithm that has recall and precision above 0.3. Machine learning techniques are well suited to obtain data-driven solutions to such questions. I applied PCA on financial data and selected 2 best features from email data, and then applied SVC for classifying POIs and non-POIs. This technique gave a precision of 0.5 and recall of 0.55, both above 0.3.",
+		"images":["images/ModelPerformance.png"],
+		"url":""	
+
+	},{
+		"title":"OpenStreetMap Data Wrangling with MongoDB",
 		"dates": "2016",
 		"description":"222222",
-		"images":["images/me.jpg",
-		"images/me.jpg"]
+		"images":["images/CO_springs.png"]
 	},{
-		"title":"22",
+		"title":"Machine learning for fraud detection in Enron’s financial and email data",
 		"dates": "2016",
 		"description":"222222",
 		"images":["images/me.jpg",
@@ -199,11 +216,17 @@ projects.display = function() {
 		$(".project-entry:last").append(formattedDate);
 		var formattedDsc = HTMLprojectDescription.replace("%data%",projects.projects[project].description);
 		$(".project-entry:last").append(formattedDsc);
+		var formattedUrl = HTMLprojectURL.replace("%data%",projects.projects[project].url);
+		var formattedUrlName = HTMLprojectURLName.replace("%data%","Click here for project.");
+		$(".project-entry:last").append(formattedUrl + formattedUrlName);
+
+
+		
 		if (projects.projects[project].images.length>0) {
 			//console.log(projects.projects[project].images.length)
 			for (image in projects.projects[project].images){
 				var formattedImage = HTMLprojectImage.replace("%data%",projects.projects[project].images[image])
-				$(".project-entry:last").append(formattedImage);
+				$(".project-entry:last").append(formattedImage);	
 			}
 		}
 		
@@ -258,7 +281,7 @@ education.displayonline = function() {
         $(".education-entry:last").append('<div align="left" class="list-entry"><b>Courses</b></div>');
         $(".education-entry:last").append(HTMLlistStart);
 	    for (course in mooc.Courses){
-	    		console.log(education.Online.Courses)
+	    		//console.log(education.Online.Courses)
 			var formattedCourse = HTMLlistItem.replace("%data%", mooc["Courses"][course]);
 			$(".education-entry:last").append(formattedCourse);
 			}
@@ -289,7 +312,7 @@ function displaywork() {
 	$(".work-entry:last").append('<div align="left"  class="list-entry"><b>Contributions</b></div>');
     $(".work-entry:last").append(HTMLlistStart);
 	for (rr in Resp.Responsibilites){
-		console.log(education.Online.Courses)
+		//console.log(education.Online.Courses)
 		var formattedCourse = HTMLlistItem.replace("%data%", Resp.Responsibilites[rr]);
 		$(".work-entry:last").append(formattedCourse);
 	}
