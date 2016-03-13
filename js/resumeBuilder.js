@@ -99,8 +99,9 @@ var work = {
 		"Dates":"July 2003 - June 2004",
 		"location" :"Pune, India",
 		"Description":"Graduate Engineer.",
-		"Responsibilites":["aa",
-			"bb"],
+		"Responsibilites":["Coordinated design and development of a prototype for auto show.",
+			"Conducted market survey to identify ",
+			"Developed computational models to predict price of rubber as part of strategic sourcing group."],
 		"title":"Graduate Engineer."
 		}
 	]
