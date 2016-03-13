@@ -74,7 +74,7 @@ var work = {
 		"Description":"PhD researcher in the department of Mechanical Engineering.",
 		"Responsibilites":["Developed robotic device for upper-arm rehabilitation",
 			"Investigated how gravity torques are represented in the brain by conducting experiments in humans",
-			"Taught <i> statics </i> (60 students).",
+			"Taught <i> statics </i> (60 undergraduate students).",
 			"Prepared manuscripts for journal and conference proceedings.",
 			"Developed algorithms for data analysis and collection in MATLAB and VB.Net."]
 		},
@@ -86,8 +86,11 @@ var work = {
 		"Dates":"August 2004 - August 2006",
 		"location" :"Rolla, MO",
 		"Description":"MS student researcher in the department of Mechanical Engineering.",
-		"Responsibilites":["aa","bb",
-			"Prepared manuscripts for journal and conference proceedings."]
+		"Responsibilites":["Developed neural network based algorithms for control of complex dynamic systems, non-linear dynamics, partial differential equations",
+				"Applied grossberg neural network to compute obstacle free path for unmanned air vehicles.",
+				"Developed and tested online clustering and routing algorithm based on grossberg neural networks for communication control between numerous unmanned air vehicles",
+				"Prepared manuscripts for journal and conference proceedings.",
+				"Taught <i>LABView and PLC control </i> (48 undergraduate students)."]
 		},
 		{
 		"employer":"Tata Motors",
@@ -96,7 +99,8 @@ var work = {
 		"Dates":"July 2003 - June 2004",
 		"location" :"Pune, India",
 		"Description":"Graduate Engineer.",
-		"Responsibilites":["aa","bb"],
+		"Responsibilites":["aa",
+			"bb"],
 		"title":"Graduate Engineer."
 		}
 	]
