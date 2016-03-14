@@ -19,7 +19,8 @@ var bio = {
 	},
 	"welcomeMsg": "Welcome to my page",
 	"bioPic": "images/me.jpg",
-	"skills": ["Programming","Machine learning","Python/R/MATLAB","JavaScript/d3","EDA","A/B Testing", "MongoDB/SQL","VB.net"]
+	"skills": ["Programming","Machine learning","Python/R/MATLAB","JavaScript/d3","EDA","A/B Testing","VB.NET"]
+
 };
 
 
@@ -39,7 +40,7 @@ var work = {
 		"Description":"Assistant professor in the departments of Mechanical Engineering and Neurology.",
 		"Responsibilites":["Developed and applied audio signal and natural language processing algorithms to quantify psychiatric effects of stroke.",
 			"Performed numerical simulations to investigate the role of non-linear dynamics in causing repetitive-use injuries.",
-			"Developed and tested nerual network based schemes for robust control of robotic manipulation.",
+			"Developed and tested nerual network based schemes for robust control of robotic manipulators.",
 			"Taught <i>Engineering Dynamics</i> (150 undegraduate students), <i> Advanced Control Systems </i> (30 graduate students).",
 			"Co-taught <i> Biomechanics and Movement I </i> (10 graduate students).",
 			"Advised senior design projects; Brain-computer interface for robot control, Automated mixologist, Knee/hip energy harvesting device.",
@@ -99,9 +100,9 @@ var work = {
 		"Dates":"July 2003 - June 2004",
 		"location" :"Pune, India",
 		"Description":"Graduate Engineer.",
-		"Responsibilites":["Coordinated design and development of a prototype for auto show.",
-			"Conducted market survey to identify price trends for steel and rubber.",
-			"Developed computational models to predict price of rubber as part of strategic sourcing group."],
+		"Responsibilites":["Coordinated design and development of a station wagon prototype for auto show.",
+			"Developed price prediction model for rubber.",
+			"Conducted market survey and research to identify geo-politcal factors governing prices of steel and rubber."],
 		"title":"Graduate Engineer."
 		}
 	]
@@ -138,9 +139,9 @@ var education = {
 		"years": "1999-2003",
 		"location": "Chennai, India",
 		"State": "India",
-		"Courses": ["Linear control systems",
-			"Nonlinear control system",
-			"Neural network design",
+		"Courses": ["Linear Algebra",
+			"Calculus I/II",
+			"Dynamics",
 			"Optimal control and estimation"
 		],
 		"Majors": "Mechanical Engineering",
@@ -174,6 +175,13 @@ var education = {
 var projects = {
 	"projects":[
 	{
+		"title":"Machine learning for fraud detection in Enron’s financial and email data",
+		"dates": "2016",
+		"description":"In this project I investigated the Enron email data. Enron email data set is a large database of about 0.5 Mn emails from about 150 employees at Enron. The Federal Energy Regulatory Commission (FERC) for investigation acquired the data after the company filed for bankruptcy in 2001. Several board members and management employees were involved in illegal business practices, and were eventually charged. Some of these people were found guilty of fraudulent practices, and others settled out of court. These people are tagged as Persons of Interest (POI) in the data set. Here I developed a formal scheme to identify POIs. The goal of this project is to develop an algorithm that has recall and precision above 0.3. Machine learning techniques are well suited to obtain data-driven solutions to such questions. I applied PCA on financial data and selected 2 best features from email data, and then applied SVC for classifying POIs and non-POIs. This technique gave a precision of 0.5 and recall of 0.55, both above 0.3.",
+		"images":["images/ModelPerformance.png"],
+		"url":"https://github.com/vxy10/Udacity_projects/blob/master/P3_MongoDB_CSosm/main_project_P4_VivekYadav_v2.ipynb"	
+
+	},{
 		"title":"San-Francisco Crime Analysis- Exploratory Analysis and Classification",
 		"dates": "2016",
 		"description":"Here I analyzed the crime incidents in the city of San Francisco, and built a linear classifier to predict the probability of a crime belonging to certain category. I downloaded the data set from Kaggle''s San Francisco crime classification competition (https://www.kaggle.com/c/sf-crime). I first loaded the data into R. The data set has information on the location of the crime and the time at which the crime occured starting from 2003. The data set had more than 800,000 rows and 9 columns. I did exploratory analysis and made several variables to quantify various aspects of the crime incident. For example, from time information, I got information about data, hour of the day, month, year, etc. After exploratory analysis, I identified that the day of week, hour of the day, month, year and location were the main factors that affected crime rates. I therefore used these to predict the probability of a crime belonging to given category. I used R''s Liblinear package to implement a L2-regularized logistic regression model to predict probability of each crime. To validate my model, I split into a 50% training set and 50% validation set. I then fitted the model on training data and improved based on its performance on the validation set. My final model had day of week, hour of the day, month, year, location and interaction between location and year. I then trained this model on full data. I then uploaded this on Kaggle and my best submission got a score of 401/1173. ",
@@ -181,23 +189,17 @@ var projects = {
 		"images/SFO2.png"],
 		"url": "https://github.com/vxy10/Udacity_projects/blob/master/P4_SFO_CrimeAnalysis/main_p4_at_v2_submission.pdf"
 	},{
-		"title":"Machine learning for fraud detection in Enron’s financial and email data",
-		"dates": "2016",
-		"description":"In this project I investigated the Enron email data. Enron email data set is a large database of about 0.5 Mn emails from about 150 employees at Enron. The Federal Energy Regulatory Commission (FERC) for investigation acquired the data after the company filed for bankruptcy in 2001. Several board members and management employees were involved in illegal business practices, and were eventually charged. Some of these people were found guilty of fraudulent practices, and others settled out of court. These people are tagged as Persons of Interest (POI) in the data set. Here I developed a formal scheme to identify POIs. The goal of this project is to develop an algorithm that has recall and precision above 0.3. Machine learning techniques are well suited to obtain data-driven solutions to such questions. I applied PCA on financial data and selected 2 best features from email data, and then applied SVC for classifying POIs and non-POIs. This technique gave a precision of 0.5 and recall of 0.55, both above 0.3.",
-		"images":["images/ModelPerformance.png"],
-		"url":""	
-
-	},{
 		"title":"OpenStreetMap Data Wrangling with MongoDB",
-		"dates": "2016",
-		"description":"222222",
-		"images":["images/CO_springs.png"]
+		"dates": "2015",
+		"description":"In this project, I applied data cleaning and wrangling skills to clean address entries in the Open Street Maps (OSM) data of Colorado Springs. Addresses in Open Street Maps are entered by users and may not be entered in the same format by everyone. For example, Street may be written as street, st or St. Further, some individuals may not provide all the entries of address field, for example, city name, zip code. This issue is further immflamed because the area of Colorado Springs includes multiple cities. For example, Colorado Springs area includes US Air Force Academy, Fort Carson, Security-Widefield, Manitou Springs etc, and a user may wrongly enter city name. I first loaded the OSM data into mongoDB. I followed a 2 step approach to fix the address entries. First I correct the over abbreviate street names, for example, converting Blvd, Bld, etc to Boulevard, or S Union Blvd to South Union Boulevard. I then used the geopy package in python to get approximate latitude and longitude and did reverse geocoding to get postal code and city names. After this process, the number of complete entries went from 15789 to 20742 (of 23183). Therefore, by applying this techniques, the percentage of complete address entries increased from 68% to 90%.",
+		"images":["images/CO_springs.png"],
+		"url":"https://github.com/vxy10/Udacity_projects/blob/master/P3_MongoDB_CSosm/main_project_P4_VivekYadav_v2.ipynb"
 	},{
-		"title":"Machine learning for fraud detection in Enron’s financial and email data",
-		"dates": "2016",
-		"description":"222222",
-		"images":["images/me.jpg",
-		"images/me.jpg"]
+		"title":"Analyzing the New York subway dataset",
+		"dates": "2015",
+		"description":"In this project, I applied statistical analysis on new york subway's turnstile to check how rain affects new york subway ridership. I first applied a the shapiro wilk's test to determine if the distribution of data is normal. This test revealed that the data were not normally distributed, therefore a non-parametric test is appropriate. However, as the number of data points were more than 50, a parametric test that assumes normal distribution is applicable. I used linear regression to model the relation between features and the data. However, as the data were not distributed normally, a log transform [log(1+x)] was applied to the dependent measures. I designed several features corresponding to the location, rain, level of precipitation, temperature of the day and if the day was week day or weekend. I tested the effect of including various interaction terms in the model. I finally proceeded with a model with 1703 features. I split the data such that 50% of it was used for training and 50% for testing. After fitting, the model had accuracy of 0.85 on both the testing and training data. Another reason for settling for 1703 parameters was to avoid overfitting. After accounting for the categorical variables, each group had about 25 data points that were fitted to continuous data. This number seemed reasonable for fitting the 3 continuous variables. Further analysis revealed that the rain had significant effect on ridership, and on average rainy days had 183 more passengers than on non-rainy days." ,
+		"images":["images/Table_NYSub.png","images/RainNoRain.png"],
+		"url":"https://github.com/vxy10/Udacity_projects/blob/master/P2_NY_SubwayRidership/P2_DSc_VivekYadav.ipynb"
 	} 
 	]
 }
@@ -244,7 +246,7 @@ education.displayschool = function() {
 		$(".education-entry:last").append(formattedMjr);
 		var formattedLoc = HTMLschoolLocation.replace("%data%",education.schools[school].location);
 		$(".education-entry:last").append(formattedLoc);
-		$(".education-entry:last").append('<div align="left" class = "list-entry"><b>Courses</b></div>');
+		$(".education-entry:last").append('<div align="left" class = "list-entry"><b>Relevant Courses</b></div>');
         $(".education-entry:last").append(HTMLlistStart);
 	    var school_courses = education.schools[school].Courses
 	    for (course in school_courses){
