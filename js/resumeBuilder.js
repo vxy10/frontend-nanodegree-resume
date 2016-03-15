@@ -153,7 +153,7 @@ var education = {
 		"school": "Udacity",
 		"url": "https://www.udacity.com/course/data-analyst-nanodegree--nd002",
 		"dates":"May 2016 (expected)",
-		"Courses": ["Introduction to Machine learning", "Data Analysis with R",
+		"Courses": ["Statistics","Introduction to Data Analysis","Introduction to Machine learning", "Data Analysis with R",
 			"Statics", "Data Wrangling with MongoDB",
 			"Data Visualization and D3.js", "Introduction to HTML and CSS",
 			"JavaScript Basics", "A/B testing"]
@@ -202,7 +202,7 @@ var projects = {
 		"url":"https://github.com/vxy10/Udacity_projects/blob/master/P2_NY_SubwayRidership/P2_DSc_VivekYadav.ipynb"
 	} 
 	]
-}
+};
 
 projects.display = function() {
 	for (project in projects.projects){
@@ -230,8 +230,8 @@ projects.display = function() {
 		
 
 	}
-}
-projects.display()
+};
+projects.display();
 
 education.displayschool = function() {
 	for (school in education.schools){
@@ -258,9 +258,9 @@ education.displayschool = function() {
 		
 
 	}
-}
-education.displayschool()
-var formattedDesc ="AAAAA"
+};
+education.displayschool();
+var formattedDesc ="AAAAA";
 
 $("#education").append(HTMLonlineClasses);
 education.displayonline = function() {
@@ -286,8 +286,8 @@ education.displayonline = function() {
 		$(".education-entry:last").append(HTMLlistEnd);
 			
 		}
-}
-education.displayonline()
+};
+education.displayonline();
 
 function displaywork() {
 	for (job in work.jobs) {
