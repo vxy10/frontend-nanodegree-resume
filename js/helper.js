@@ -41,7 +41,7 @@ var HTMLprojectTitle = '<a href="#">%data%</a>';
 var HTMLprojectDates = '<div class="date-text">%data%</div>';
 var HTMLprojectDescription = '<p><br>%data%</p>';
 var HTMLprojectImage = '<img src="%data%">';
-var HTMLprojectURL = "<a href='%data%'>";
+var HTMLprojectURL = "<a href='%data%'  target='_blank'>";
 var HTMLprojectURLName = "%data% </a>";
 
 
