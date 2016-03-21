@@ -175,19 +175,11 @@ var education = {
 var projects = {
 	"projects":[
 	{
-<<<<<<< HEAD
-		"title":"Attendance in soccer world cup games since 1930s",
-		"dates": "2016",
-		"description":"I did this project as a part of Data visualization and d3.js course. In this course, I learned HTML/CSS and developed visualizations in plotly, dimple, tableau and d3.js. In this visualization attendance in soccer world cup games since 1930s is plotted. For each year, the participating teams are shown in light green, the red circles represent the attendance. The world cup attendance has risen since 1930s, and the games have spread from american and european continents to oceanic and asian countries. Once the animation completes, the user can click year buttons on the left side to further explore trends in world cup attendance.", 
-		"images":["images/WC_map.png"],
-=======
 		"title":"Soccer world cup attendance",
 		"dates": "2016",
 		"description":"I did this project as a part of Data visualization and d3.js course. In this course, I learned HTML/CSS and developed visualizations in plotly, dimple, tableau and d3.js. In this visualization attendance in soccer world cup games since 1930s is plotted. For each year, the participating teams are shown in light green, the red circles represent the attendance. The world cup attendance has risen since 1930s, and the games have spread from american and european continents to oceanic and asian countries. Once the animation completes, the user can click year buttons on the left side to further explore trends in world cup attendance.",
 	 	"images":["images/WC_map.png"],
->>>>>>> master
 		"url":"http://vxy10.github.io/WC_map/index.html"	
-
 	},{
 		"title":"Machine learning for fraud detection in Enron’s financial and email data",
 		"dates": "2016",
