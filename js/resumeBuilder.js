@@ -17,7 +17,7 @@ var bio = {
 		"github":"vxy10",
 		"location": "Port Jefferson, NY"
 	},
-	"welcomeMsg": "Thank you for visiting my page. My work involves developing mathematical data models to represent complex phenomena. I am currently working as an assistant professor at Stony Brook University, where I apply techniques like natural language processing, audio signal processing and neural network modeling. I believe in constantly improving my skills and keeping myself abreast with the current knowledge in the field of data science. This curiosity led me to pursue Coursera's Data Science Specialization and Udacity's Data Analyst Nano-Degree. These courses gave me the necessary skillset to successfully transition from academia to industry. I am looking for positions where I can pursue a career in data science, and apply my math knowledge and computational skillset on real-life data sets. I look forward to hearing from you.",
+	"welcomeMsg": "Thank you for visiting. My work involves developing mathematical data models to represent complex phenomena. I am currently working as an assistant professor at Stony Brook University, where I apply techniques like natural language processing, audio signal processing and neural network techniques for my research work. I believe in constantly improving my skills and keeping myself abreast with current knowledge in the field of data science. This curiosity led me to pursue Coursera's Data Science Specialization and Udacity's Data Analyst Nano-Degree. I can pursue a career in data science where I can apply my math knowledge and computational skillset on real-life data sets. ",
 	"bioPic": "images/me.jpg",
 	"skills": ["Programming","Machine learning","Python/R/MATLAB","JavaScript/d3","EDA","A/B Testing","VB.NET"]
 
@@ -153,7 +153,7 @@ var education = {
 		"school": "Udacity",
 		"url": "https://www.udacity.com/course/data-analyst-nanodegree--nd002",
 		"dates":"May 2016 (expected)",
-		"Courses": ["Statistics","Introduction to Data Analysis","Introduction to Machine learning", "Data Analysis with R",
+		"Courses": ["Introduction to Machine learning", "Data Analysis with R",
 			"Statics", "Data Wrangling with MongoDB",
 			"Data Visualization and D3.js", "Introduction to HTML and CSS",
 			"JavaScript Basics", "A/B testing"]
@@ -175,17 +175,11 @@ var education = {
 var projects = {
 	"projects":[
 	{
-		"title":"Soccer world cup attendance",
-		"dates": "2016",
-		"description":"I did this project as a part of Data visualization and d3.js course. In this course, I learned HTML/CSS and developed visualizations in plotly, dimple, tableau and d3.js. In this visualization attendance in soccer world cup games since 1930s is plotted. For each year, the participating teams are shown in light green, the red circles represent the attendance. The world cup attendance has risen since 1930s, and the games have spread from american and european continents to oceanic and asian countries. Once the animation completes, the user can click year buttons on the left side to further explore trends in world cup attendance.",
-	 	"images":["images/WC_map.png"],
-		"url":"http://vxy10.github.io/WC_map/index.html"	
-	},{
 		"title":"Machine learning for fraud detection in Enron’s financial and email data",
 		"dates": "2016",
 		"description":"In this project I investigated the Enron email data. Enron email data set is a large database of about 0.5 Mn emails from about 150 employees at Enron. The Federal Energy Regulatory Commission (FERC) for investigation acquired the data after the company filed for bankruptcy in 2001. Several board members and management employees were involved in illegal business practices, and were eventually charged. Some of these people were found guilty of fraudulent practices, and others settled out of court. These people are tagged as Persons of Interest (POI) in the data set. Here I developed a formal scheme to identify POIs. The goal of this project is to develop an algorithm that has recall and precision above 0.3. Machine learning techniques are well suited to obtain data-driven solutions to such questions. I applied PCA on financial data and selected 2 best features from email data, and then applied SVC for classifying POIs and non-POIs. This technique gave a precision of 0.5 and recall of 0.55, both above 0.3.",
 		"images":["images/ModelPerformance.png"],
-		"url":"https://github.com/vxy10/Udacity_projects/blob/master/P5_Enron_email/POI_analysis_ipynb_new.ipynb"	
+		"url":"https://github.com/vxy10/Udacity_projects/blob/master/P3_MongoDB_CSosm/main_project_P4_VivekYadav_v2.ipynb"	
 
 	},{
 		"title":"San-Francisco Crime Analysis- Exploratory Analysis and Classification",
@@ -208,7 +202,7 @@ var projects = {
 		"url":"https://github.com/vxy10/Udacity_projects/blob/master/P2_NY_SubwayRidership/P2_DSc_VivekYadav.ipynb"
 	} 
 	]
-};
+}
 
 projects.display = function() {
 	for (project in projects.projects){
@@ -236,8 +230,8 @@ projects.display = function() {
 		
 
 	}
-};
-projects.display();
+}
+projects.display()
 
 education.displayschool = function() {
 	for (school in education.schools){
@@ -264,9 +258,9 @@ education.displayschool = function() {
 		
 
 	}
-};
-education.displayschool();
-var formattedDesc ="AAAAA";
+}
+education.displayschool()
+var formattedDesc ="AAAAA"
 
 $("#education").append(HTMLonlineClasses);
 education.displayonline = function() {
@@ -292,8 +286,8 @@ education.displayonline = function() {
 		$(".education-entry:last").append(HTMLlistEnd);
 			
 		}
-};
-education.displayonline();
+}
+education.displayonline()
 
 function displaywork() {
 	for (job in work.jobs) {
