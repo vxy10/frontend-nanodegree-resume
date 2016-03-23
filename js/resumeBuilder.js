@@ -196,7 +196,7 @@ var projects = {
 		"dates": "2016",
 		"description":"In this project I investigated the Enron email data. Enron email data set is a large database of about 0.5 Mn emails from about 150 employees at Enron. The Federal Energy Regulatory Commission (FERC) for investigation acquired the data after the company filed for bankruptcy in 2001. Several board members and management employees were involved in illegal business practices, and were eventually charged. Some of these people were found guilty of fraudulent practices, and others settled out of court. These people are tagged as Persons of Interest (POI) in the data set. Here I developed a formal scheme to identify POIs. The goal of this project is to develop an algorithm that has recall and precision above 0.3. Machine learning techniques are well suited to obtain data-driven solutions to such questions. I applied PCA on financial data and selected 2 best features from email data, and then applied SVC for classifying POIs and non-POIs. This technique gave a precision of 0.5 and recall of 0.55, both above 0.3.",
 		"images":["images/ModelPerformance.png"],
-		"url":"https://github.com/vxy10/Udacity_projects/blob/master/P3_MongoDB_CSosm/main_project_P4_VivekYadav_v2.ipynb",
+		"url":"https://github.com/vxy10/Udacity_projects/blob/master/P5_Enron_email/POI_analysis_ipynb_new.ipynb",
 		"skills":"Machine learning, Exploratory data analysis, Predictive modeling, Python"	
 
 	},{
