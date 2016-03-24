@@ -17,7 +17,7 @@ var bio = {
 		"github":"vxy10",
 		"location": "Port Jefferson, NY"
 	},
-	"welcomeMsg": "Thank you for visiting. My work involves developing mathematical data models to represent complex phenomena. I am currently working as an assistant professor at Stony Brook University, where I apply techniques like natural language processing, audio signal processing and neural network techniques for my research work. I believe in constantly improving my skills and keeping myself abreast with current knowledge in the field of data science. This curiosity led me to pursue Coursera's Data Science Specialization and Udacity's Data Analyst Nano-Degree. I can pursue a career in data science where I can apply my math knowledge and computational skillset on real-life data sets. ",
+	"welcomeMsg": "Thank you for visiting. My work involves developing mathematical data models to represent complex phenomena. I am currently working as an assistant professor at Stony Brook University, where I apply techniques like natural language processing, audio signal processing and neural network techniques for my research work. I believe in constantly improving my skills and keeping myself abreast with current knowledge in the field of data science. This curiosity led me to pursue Coursera's Data Science Specialization and Udacity's Data Analyst Nano-Degree. I want to pursue a career in data science where I can apply my math knowledge, computational and programming skills on real-life data sets. ",
 	"bioPic": "images/me.jpg",
 	"skills": ["Programming","Machine learning","Python/R/MATLAB","JavaScript/d3","EDA","NoSQL/MongoDB","A/B Testing","VB.NET"]
 
@@ -184,7 +184,7 @@ var projects = {
 	"projects":[
 	
 	{
-		"title":"Soccer world cup attendance",
+		"title":"Soccer world cup attendance trends since 1930s",
 		"dates": "2016",
 		"description":"I did this project as a part of Data visualization and d3.js course. In this course, I learned HTML/CSS and developed visualizations in plotly, dimple, tableau and d3.js. In this visualization attendance in soccer world cup games since 1930s is plotted. For each year, the participating teams are shown in light green, the red circles represent the attendance. The world cup attendance has risen since 1930s, and the games have spread from american and european continents to oceanic and asian countries. Once the animation completes, the user can click year buttons on the left side to further explore trends in world cup attendance.",
 		"images":["images/WC_map.png"],
