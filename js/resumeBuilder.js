@@ -17,7 +17,7 @@ var bio = {
 		"github":"vxy10",
 		"location": "Port Jefferson, NY"
 	},
-	"welcomeMsg": "Thank you for visiting. My work involves developing mathematical data models to represent complex phenomena. I am currently working as an assistant professor at Stony Brook University, where I apply techniques like natural language processing, audio signal processing and neural network techniques for my research work. I believe in constantly improving my skills and keeping myself abreast with current knowledge in the field of data science. This curiosity led me to pursue Coursera's Data Science Specialization and Udacity's Data Analyst Nano-Degree. I can pursue a career in data science where I can apply my math knowledge and computational skillset on real-life data sets. ",
+	"welcomeMsg": "Thank you for visiting. My work involves developing mathematical data models to represent complex phenomena. I am currently working as an assistant professor at Stony Brook University, where I apply techniques like natural language processing, audio signal processing and neural network techniques for my research work. I believe in constantly improving my skills and keeping myself abreast with current knowledge in the field of data science. This curiosity led me to pursue Coursera's Data Science Specialization and Udacity's Data Analyst Nano-Degree. I want to pursue a career in data science where I can apply my math knowledge, computational and programming skills on real-life data sets. ",
 	"bioPic": "images/me.jpg",
 	"skills": ["Programming","Machine learning","Python/R/MATLAB","JavaScript/d3","EDA","A/B Testing","VB.NET"]
 
